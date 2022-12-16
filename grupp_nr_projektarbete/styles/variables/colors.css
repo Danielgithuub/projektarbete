@@ -3,7 +3,7 @@
   --base-hue-2: 177; /* Turquoise */
   --base-hue-3: 328; /* Red */
   --base-hue-4: 105; /* Green */
-  --base-hue-5: 24;  /* Orange */
+  --base-hue-5: 24; /* Orange */
   --base-black: calc(var(--base-hue-1) + 22);
 
   --shift: 0;

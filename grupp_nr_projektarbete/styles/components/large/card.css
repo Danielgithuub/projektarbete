@@ -1,25 +1,56 @@
-.card-container__card{
-  background-color: rgba(255, 255, 255, 0.384);
-  border-radius: 15px 15px 15px 15px;
-  margin-top: 5vh;
+.card {
+  background-color: rgba(255, 255, 255, 0.374);
+  border-radius: var(--g-3);
 }
 
-/*-----------------header----------------------*/
-.card-container__card-header {
-  background-color: blue;
-  border-radius: 15px 15px 0px 0px;
+.card-container__header {
+  border-radius: 10px 10px 0px 0px;
+  background-color: hsl(var(--base-hue-1), 50%, 50%);
+  margin-block-start: 2rem;
+  height: 2rem;
 }
-/*----------------main-----------------------*/
-.card-container__card-main {
+.card-container__card-headline {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.card--icon {
+  width: 4rem;
+  position: absolute;
+  right: 0;
+
+  padding: 1.5%;
+  transform: translate(-50%, 0%);
+  background-color: red;
+  border-radius: 50%;
+}
+
+.card--danger {
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(var(--hue-3), 50%, 50%),
+    hsl(var(--hue-3), 50%, 70%)
+  );
+
+  border-color: hsl(var(--base-hue-3), 100%, 100%);
+}
+
+.card-container__main {
   border-bottom: solid;
-  border-color: blueviolet;
-}
-.card-container__icon-pos{
-    height: 5vh;
-    margin-left: 80%;
+  border-color: blue;
 }
 
-/*------------------footer---------------------*/
-.card-container__card-footer {
-  background-color: None;
+.card-container__card-text {
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+}
+
+.card-container__footer {
+  height: 4vh;
+}
+.btn {
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+  transform: translate(-25%, -25%);
+  float: right;
 }

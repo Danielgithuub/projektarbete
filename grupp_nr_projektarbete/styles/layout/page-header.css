@@ -34,12 +34,12 @@
   position: relative;
   z-index: 10;
   padding: 1em 0;
-  margin-left: .3ch;
+  margin-left: 0.3ch;
   font-family: var(--fontMono);
   font-size: 1em;
   font-weight: 600;
   color: white;
-  letter-spacing: .075em;
+  letter-spacing: 0.075em;
   line-height: 100%;
   text-align: center;
 }
