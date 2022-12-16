@@ -1,0 +1,70 @@
+
+/*Box text*/
+.account-bg__name-text{
+    color: rgb(249, 209, 153);
+    font-size: 7vw;
+}
+
+.account-bg__roll-text{
+    color: #ffff;
+    font-size: 3.5vw;
+}
+
+/*account img */
+.account-bg__img-box{
+    position: fixed;
+    padding: 3%;
+    background-color: rgba(255, 255, 255, 0.169);
+    border: 1px solid;
+    border-color: #ffff;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.358);
+    border-radius: 50%;
+    position: relative;
+}
+
+.account-bg__account-img{
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out 0s; 
+}
+
+.account-bg__account-img:hover{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/*mail icon */
+.account-bg__mail-box
+{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    padding: 3%;
+    background-color: rgba(255, 255, 255, 0.219);
+    border: 1px solid;
+    border-color: #ffff;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.358);
+    z-index: 999;
+    font-size: 30px;
+    min-width: 75px;
+    min-height: 75px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.account-bg__mail-box__mail-icon{
+   color: rgb(79, 79, 202);
+   position: absolute;
+   top: 22%;
+   left: 30%;
+}
+
+.account-bg__mail-box:hover .account-bg__mail-box__mail-icon {
+    transform: scale(1.2); 
+    color: black;
+ 
+}
+
+.account-bg__mail-box:hover{
+    transform: scale(1.2); 
+}

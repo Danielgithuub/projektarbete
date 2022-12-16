@@ -1,0 +1,25 @@
+.card-container__card{
+  background-color: rgba(255, 255, 255, 0.384);
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 5vh;
+}
+
+/*-----------------header----------------------*/
+.card-container__card-header {
+  background-color: blue;
+  border-radius: 15px 15px 0px 0px;
+}
+/*----------------main-----------------------*/
+.card-container__card-main {
+  border-bottom: solid;
+  border-color: blueviolet;
+}
+.card-container__icon-pos{
+    height: 5vh;
+    margin-left: 80%;
+}
+
+/*------------------footer---------------------*/
+.card-container__card-footer {
+  background-color: None;
+}
