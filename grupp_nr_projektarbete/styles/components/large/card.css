@@ -1,56 +1,89 @@
-.card {
-  background-color: rgba(255, 255, 255, 0.374);
-  border-radius: var(--g-3);
+.card-container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(255, 255, 255, 0.384);
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 5rem;
+}
+.card-container__card-content
+
+/*-----------------header----------------------*/
+.card-container__card-header {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(34, 83, 124),
+    rgb(102, 145, 181)
+  );
+  border-radius: 15px 15px 0px 0px;
+  height: 12rem;
+  position: relative;
+}
+.card-container__card-content {
+  margin: 1rem;
+  margin-top: 3rem;
 }
 
-.card-container__header {
-  border-radius: 10px 10px 0px 0px;
-  background-color: hsl(var(--base-hue-1), 50%, 50%);
-  margin-block-start: 2rem;
-  height: 2rem;
-}
-.card-container__card-headline {
-  font-size: 3rem;
-  color: var(--white);
-}
+.card-container__card-icon {
+  height: 5rem;
+  padding: 0.5rem;
 
-.card--icon {
-  width: 4rem;
   position: absolute;
   right: 0;
+  bottom: 0;
+  transform: translate(0%, 50%);
+  margin-right: 20px;
 
-  padding: 1.5%;
-  transform: translate(-50%, 0%);
-  background-color: red;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(34, 83, 124),
+    rgb(102, 145, 181)
+  );
+
   border-radius: 50%;
 }
 
+.card-container__titel {
+  font-size: xx-large;
+  color: rgb(234, 243, 252);
+}
+.card-container__under-title {
+  font-size: bold;
+  color: rgb(234, 243, 252);
+}
+/*----------------main-----------------------*/
+.border {
+  height: 0.2rem;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(34, 83, 124),
+    rgb(102, 145, 181)
+  );
+}
+.card-container__card-text {
+}
+/*------------------footer---------------------*/
+.card-container__card-footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-block: 2rem;
+  margin-inline-end: 2rem;
+}
+
+/*------------------modifiers---------------------*/
 .card--danger {
   background-image: linear-gradient(
     to bottom right,
-    hsl(var(--hue-3), 50%, 50%),
-    hsl(var(--hue-3), 50%, 70%)
+    rgb(124, 34, 82),
+    rgb(182, 102, 146)
   );
-
-  border-color: hsl(var(--base-hue-3), 100%, 100%);
 }
 
-.card-container__main {
-  border-bottom: solid;
-  border-color: blue;
-}
-
-.card-container__card-text {
-  margin-block-start: 2rem;
-  margin-block-end: 2rem;
-}
-
-.card-container__footer {
-  height: 4vh;
-}
-.btn {
-  margin-block-start: 2rem;
-  margin-block-end: 2rem;
-  transform: translate(-25%, -25%);
-  float: right;
+.card--success {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(57, 125, 34),
+    rgb(127, 187, 106)
+  );
 }
